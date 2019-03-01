@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Screen from './components/screen';
 import Buttons from './components/buttons';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class App extends Component {
   }
 
   getLastNumber(accum) {
+    var symbols = ["−", "+", "×", "÷"];
     var accumArr = accum.split("");
     var lastNumber = [];
     for (var i = accumArr.length - 1; i >= 0; i--) {
